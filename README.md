@@ -1,13 +1,13 @@
 ![](https://img.shields.io/badge/language-shell-blue)
 ![](https://img.shields.io/badge/technology-docker,%20dockerfile,%20swarm-blue)
 ![](https://img.shields.io/badge/development%20year-2019-orange)
+![](https://img.shields.io/badge/contributor-shijiansu-purple)
 ![](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ![](https://img.shields.io/github/languages/top/shijiansu/docker-book-2019-docker-in-action-2nd)
 ![](https://img.shields.io/github/languages/count/shijiansu/docker-book-2019-docker-in-action-2nd)
 ![](https://img.shields.io/github/languages/code-size/shijiansu/docker-book-2019-docker-in-action-2nd)
 ![](https://img.shields.io/github/repo-size/shijiansu/docker-book-2019-docker-in-action-2nd)
-![](https://img.shields.io/github/commit-activity/m/shijiansu/docker-book-2019-docker-in-action-2nd)
 ![](https://img.shields.io/github/last-commit/shijiansu/docker-book-2019-docker-in-action-2nd?color=red)
 
 --------------------------------------------------------------------------------
