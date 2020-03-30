@@ -26,3 +26,9 @@ In addition to other critical functions, an `init system` starts other processes
 Several such init systems could be used inside a container.
 
 The most popular include `runit`, `Yelp/dumb-init`, `tini`, `supervisord`, and `tianon/gosu`.
+
+# Startup scripts
+
+Startup scripts are an important part of building durable containers and can always be combined with Docker restart policies to take advantage of the strengths of each.
+
+Running startup scripts as PID 1 is problematic when the script fails to meet the expectations that Linux has for init systems.
