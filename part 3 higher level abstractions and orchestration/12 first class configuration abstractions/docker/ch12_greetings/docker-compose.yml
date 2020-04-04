@@ -1,0 +1,25 @@
+# Docker Compose file reference: https://docs.docker.com/compose/compose-file/
+version: '3.7'
+
+configs:
+  env_specific_config:
+    file: ./api/config/config.${DEPLOY_ENV:-prod}.yml
+
+services:
+
+  api:
+      image: ${IMAGE_REPOSITORY:-dockerinaction/ch12_greetings}:api
+      ports:
+        - '8080:8080'
+        - '8443:8443'
+      user: '1000'
+      configs:
+        #- env_specific_config # short form mounts the config file in as a file named `env_specific_config`
+        - source: env_specific_config
+          target: /config/config.${DEPLOY_ENV:-prod}.yml
+          uid: '1000'
+          gid: '1000'
+          mode: 0400 #default is 0444 - readonly for all users
+      secrets: []
+      environment:
+        DEPLOY_ENV: ${DEPLOY_ENV:-prod}
