@@ -24,6 +24,10 @@
 - A virtual network that Docker creates to connect all of the running containers to the network that the computer is connected to.
 - A bridge is an interface that connects multiple networks so that they can function as a single network.
 
+# DNS
+
+Domain Name System (DNS) is a protocol for mapping hostnames to IP addresses.
+
 # Docker container networking
 
 - Docker abstracts the underlying host-attached network from containers. Doing so pro- vides a degree of runtime environment agnosticism for the application, and allows infra- structure managers to adapt the implementation to suit the operating environment.
