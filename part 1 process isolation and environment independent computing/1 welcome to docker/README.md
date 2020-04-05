@@ -1,6 +1,7 @@
 The containers that Docker builds are isolated with respect to eight aspects. 
 
 The specific aspects are as follows:
+
 - PID namespace—Process identifiers and capabilities
 - UTS namespace—Host and domain name
 - MNT namespace—File system access and structure

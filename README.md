@@ -31,6 +31,18 @@
 
 --------------------------------------------------------------------------------
 
+# Some docker command for lib
+
+```shell script
+docker stop $(docker ps -q) # stop all dockers
+docker stop ch6_wordpress && docker rm ch6_wordpress # stop and remove
+
+docker container rm -vf ch6_wordpress # forced kill and also clean volumes
+
+docker system df # show used space, similar to the unix tool df
+docker system prune # remove all unused data.
+```
+
 # Execute all tests in repo
 
 `/bin/bash run-repo-test.sh`
