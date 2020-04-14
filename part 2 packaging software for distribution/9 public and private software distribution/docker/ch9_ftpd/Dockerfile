@@ -7,4 +7,5 @@ RUN yum -y install vsftpd && \
     chown -R ftp:ftp /var/ftp && \
     chmod a+w /var/ftp/pub/incoming
 COPY ./vsftpd.conf /etc/vsftpd/vsftpd.conf
-ENTRYPOINT ["/usr/sbin/vsftpd","/etc/vsftpd/vsftpd.conf"]
+# startup command: /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf
+ENTRYPOINT ["/usr/sbin/vsftpd", "/etc/vsftpd/vsftpd.conf"]
