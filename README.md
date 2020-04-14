@@ -34,13 +34,17 @@
 # Some docker command for lib
 
 ```shell script
+docker ps --no-trunc # see all running containers with full info
+docker ps --no-trunc -a # see all containers with full info
+
 docker stop $(docker ps -q) # stop all dockers
 docker stop ch6_wordpress && docker rm ch6_wordpress # stop and remove
 
 docker container rm -vf ch6_wordpress # forced kill and also clean volumes
 
 docker system df # show used space, similar to the unix tool df
-docker system prune # remove all unused data.
+docker system prune # remove all dangling ((not associated with a container)) resources.
+docker system prune -a # remove any stopped containers and all unused images
 ```
 
 # Execute all tests in repo
