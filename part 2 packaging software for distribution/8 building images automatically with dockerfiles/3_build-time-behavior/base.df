@@ -1,0 +1,5 @@
+FROM busybox:latest
+WORKDIR /app
+RUN touch /app/base-evidence
+# will be triggered when building FROM this image
+ONBUILD RUN ls -al /app

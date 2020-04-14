@@ -1,0 +1,111 @@
+[
+    {
+        "Id": "sha256:5d6165d00cc27240dbc2fb1e1e359e7e7dfa687c5f73f8f42da8141862f94000",
+        "RepoTags": [
+            "dockerinaction/mailer-base:0.6"
+        ],
+        "RepoDigests": [],
+        "Parent": "sha256:153fe4d6e041cb6abf1f3d340c2cae8b74aea748ed86eb57c259f6f80e74411f",
+        "Comment": "",
+        "Created": "2020-04-10T13:56:19.5823518Z",
+        "Container": "ad2069743b08c3c710b92b4e370db680ed650ae07ab5160924e6520ff6b2a423",
+        "ContainerConfig": {
+            "Hostname": "ad2069743b08",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "33333/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "APPROOT=/app",
+                "APP=mailer.sh",
+                "VERSION=0.6"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "EXPOSE 33333"
+            ],
+            "Image": "sha256:153fe4d6e041cb6abf1f3d340c2cae8b74aea748ed86eb57c259f6f80e74411f",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "/app/mailer.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "base.name": "Mailer Archetype",
+                "base.version": "0.6",
+                "maintainer": "dia@allingeek.com"
+            }
+        },
+        "DockerVersion": "19.03.8",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "33333/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "APPROOT=/app",
+                "APP=mailer.sh",
+                "VERSION=0.6"
+            ],
+            "Cmd": null,
+            "Image": "sha256:153fe4d6e041cb6abf1f3d340c2cae8b74aea748ed86eb57c259f6f80e74411f",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "/app/mailer.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "base.name": "Mailer Archetype",
+                "base.version": "0.6",
+                "maintainer": "dia@allingeek.com"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 114766102,
+        "VirtualSize": 114766102,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/64536d37914056bbbe906f7fe2ae7ceaaadd81b96449281debfe7597e18b8f5b/diff:/var/lib/docker/overlay2/0a2bdc8ad3dfde59628a646cd5228e311d2641dc0139b72d6373f2592bfbc547/diff:/var/lib/docker/overlay2/a232271eff2b4d76e2b8f8a2aeabf773b82b4903c4a4abe62589523a2eeaa254/diff",
+                "MergedDir": "/var/lib/docker/overlay2/388630a168c7908e3371433fc63069f96337f1badde2a4cc01970455c3d3d283/merged",
+                "UpperDir": "/var/lib/docker/overlay2/388630a168c7908e3371433fc63069f96337f1badde2a4cc01970455c3d3d283/diff",
+                "WorkDir": "/var/lib/docker/overlay2/388630a168c7908e3371433fc63069f96337f1badde2a4cc01970455c3d3d283/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d",
+                "sha256:522d564c3c6ccfe21be93b9c7bfc2a9506c14539a97b0938021ca133721f2843",
+                "sha256:a977b06ab7501fa9439eaba0d802641eadb83471195b8171735c8e48a31c0d17",
+                "sha256:0f5a9a10489366ccc836d2dce7b09bf3db6dcf12f1c6f36b349930e944dd9532"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2020-04-10T13:56:19.6418048Z"
+        }
+    }
+]

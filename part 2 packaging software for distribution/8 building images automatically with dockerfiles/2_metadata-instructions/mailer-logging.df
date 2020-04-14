@@ -1,0 +1,10 @@
+FROM dockerinaction/mailer-base:0.6
+RUN apt-get update && \
+    apt-get install -y netcat
+# any files copied will be copied with file ownership set to root
+COPY ["./log-impl", "${APPROOT}"]
+RUN chmod a+x ${APPROOT}/${APP} && \
+    chown example:example /var/log
+USER example:example
+VOLUME ["/var/log"]
+CMD ["/var/log/mailer.log"]
