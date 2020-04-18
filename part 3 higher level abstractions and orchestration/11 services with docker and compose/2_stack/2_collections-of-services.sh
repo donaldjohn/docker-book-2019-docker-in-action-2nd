@@ -6,14 +6,14 @@ docker stack deploy -c 2_CollectionsOfServices.yml my-databases
 docker service ls
 
 # ID                  NAME                          MODE                REPLICAS            IMAGE                               PORTS
-# qek40i5e1i3h        my-databases_adminer          replicated          1/1                 dockerinaction/adminer:4            *:8081->8080/tcp
+# qek40i5e1i3h        my-databases_adminer          replicated          1/1                 dockerinaction/adminer:4            *:8080->8080/tcp
 # 9j3vsnnjy9h2        my-databases_mariadb          replicated          1/1                 dockerinaction/mariadb:10-bionic
 # 6nsp80gs394z        my-databases_postgres         replicated          1/1                 dockerinaction/postgres:11-alpine
 
 # after put deploy: replicas: 3 into adminer
 
 #ID                  NAME                          MODE                REPLICAS            IMAGE                               PORTS
-# qek40i5e1i3h        my-databases_adminer          replicated          3/3                 dockerinaction/adminer:4            *:8081->8080/tcp
+# qek40i5e1i3h        my-databases_adminer          replicated          3/3                 dockerinaction/adminer:4            *:8080->8080/tcp
 # 9j3vsnnjy9h2        my-databases_mariadb          replicated          1/1                 dockerinaction/mariadb:10-bionic
 # 6nsp80gs394z        my-databases_postgres         replicated          1/1                 dockerinaction/postgres:11-alpine
 
@@ -49,7 +49,7 @@ docker stack deploy -c 2_CollectionsOfServices3-volume.yml --prune my-databases
 
 docker volume ls
 
-# http://localhost:8081
+# http://localhost:8080
 # System: PostgreSQL; Server: postgres; Username/password: postgres/example
 
 docker service remove my-databases_postgres

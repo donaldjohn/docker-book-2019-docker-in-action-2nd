@@ -11,6 +11,6 @@ services:
   adminer:
     image: dockerinaction/adminer:4
     ports:
-      - 8081:8080
+      - 8080:8080
     deploy:
       replicas: 3
