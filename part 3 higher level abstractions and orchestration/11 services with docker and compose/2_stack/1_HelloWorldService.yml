@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  hello-world-2:
+    image: dockerinaction/ch11_service_hw:v1
+    ports:
+      - 8080:80
+    deploy:
+      replicas: 3
